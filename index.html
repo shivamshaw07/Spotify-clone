@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spotify</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <script src="https://kit.fontawesome.com/14c2e48067.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./main.css">
+    <style>
+        
+        ::-webkit-scrollbar {
+        width: 5px;
+        
+        }
+        ::-webkit-scrollbar-track {
+        background: #f3f3f300;
+        }
+        ::-webkit-scrollbar-thumb {
+        background: #888;
+        width: 15px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+        background: #c4c4c4;
+        }
+
+        .hero-section{
+                background-image: linear-gradient(rgba(70, 141, 207, 0.93) 0%, rgba(8, 60, 96, 0.855) 90%);
+        }
+        
+        .lower-section{
+            background-image: linear-gradient(rgba(33, 32, 33, 0.791) 10%, rgba(14, 14, 14, 0.855) 30%, rgb(17, 17, 17) 50%);
+
+        }
+    </style>
+</head>
+<body>
+    <!-- ===== Main page ===== -->
+    <div class="w-[100vw] h-[100vh] overflow-hidden box-border ">
+        <!-- ===== Upper section ===== -->
+        <div class="flex">
+            <!-- ==== Left section ==== -->
+            <div class="w-[18vw] flex flex-col bg-black pl-6 pt-6 gap-8 h-[90vh] pb-6">
+                <!-- ==== Navigation section ==== -->
+                <div class=" flex flex-col gap-[25px] bg-black ">
+                    <!-- Logo -->
+                    <div>
+                        <img src="./images/Spotify_Logo.png" class="h-8">
+                    </div>
+                    <!-- buttons -->
+                    <div class="flex flex-col gap-1">
+                        <a href="#" class="text-[#a5a5a5] hover:text-white text-xs font-bold"> <span><i class="text-[#a5a5a5] uil uil-estate text-xl pr-2"></i></span> Home</a>
+                        <a href="#" class=" text-[#a5a5a5] hover:text-white text-xs font-bold"> <span><i class="text-[#a5a5a5] hover:text-white uil uil-search text-xl pr-2"></i></span> Search</a>
+                        <a href="#" class=" text-[#a5a5a5] hover:text-white text-xs font-bold"> <span><i class="text-[#a5a5a5] hover:text-white uil uil-book-open text-xl pr-2"></i></span> Your library</a>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <div>
+                            <a class="text-[#a5a5a5] hover:text-white text-xs font-bold inline-block cursor-pointer"><img src="./images/plus.png" class=" pr-3 inline-block h-[20px]">Create playlist</a>
+                        </div>
+                        <div>
+                            <a class="text-[#a5a5a5] hover:text-white text-xs font-bold inline-block cursor-pointer"><img src="./images/like.png" class=" pr-3 inline-block h-[20px]">Create playlist</a>
+                        </div>
+                    </div>
+                </div>
+                <hr class="border-[#a5a5a5]">
+                <!-- ==== Feature section ==== -->
+                <div class="flex flex-col gap-4 h-[220px] overflow-y-hidden hover:overflow-y-scroll scroll-smooth pb-4 ">
+                    <a href="#" class=" text-[#a5a5a5] hover:text-white text-xs font-bold">Chill vibes</a>
+                    <a href="#" class=" text-[#a5a5a5] hover:text-white text-xs font-bold">Party time</a>
+                    <a href="#" class=" text-[#a5a5a5] hover:text-white text-xs font-bold">Lofi music</a>
+                    <a href="#" class=" text-[#a5a5a5] hover:text-white text-xs font-bold">Punjabi</a>
+                    <a href="#" class=" text-[#a5a5a5] hover:text-white text-xs font-bold">Workout</a>
+                    <a href="#" class=" text-[#a5a5a5] hover:text-white text-xs font-bold">Romantic music</a>
+                    <a href="#" class=" text-[#a5a5a5] hover:text-white text-xs font-bold">Travel</a>
+                    <a href="#" class=" text-[#a5a5a5] hover:text-white text-xs font-bold">Study</a>
+                    <a href="#" class=" text-[#a5a5a5] hover:text-white text-xs font-bold">Aesthetic</a>
+                    <a href="#" class=" text-[#a5a5a5] hover:text-white text-xs font-bold">Rap song</a>
+                    <a href="#" class=" text-[#a5a5a5] hover:text-white text-xs font-bold">K-Pop</a>
+                </div>
+            </div>
+            <!-- ==== Right section ==== -->
+            <div class="flex flex-col h-[90vh] overflow-y-scroll overflow-x-hidden">
+                <!-- ==== Upper feature section ==== -->
+                <div class="flex p-6 hero-section  z-[1] w-[82vw]">
+                    <!-- ==== Image ==== -->
+                    <div class="w-[180px] ">
+                        <div class="arrow">
+                            <i class=" fa-sharp fa-solid fa-circle-chevron-left fa-xl pb-8" style="color: #00000086;"></i>
+                            <i class=" fa-sharp fa-solid fa-circle-chevron-right fa-xl" style="color: #00000086;"></i>
+                        </div>
+                        <img src="./images/main honey.png" class="w-[180px] shadow-2xl shadow-black z-[11]">
+                    </div>
+                    <!-- ==== Song detail -->
+                    <div class="flex flex-col text-white justify-end gap-6 pl-4">
+                        <h1 class="text-white text-xs font-bold">Album</h1>
+                        <h1 class="text-6xl font-bold">Desi kalakaar</h1>
+                        <p class="text-white text-xs font-bold">
+                            <a href="#"> <span>Yo Yo Honey Singh</span>
+                            </a> <span>&#x2022; 2023</span>
+                            <span>&#x2022; 8 songs,</span>
+                            <span class="text-[#cac6c6] text-[10px]">29 min 37 sec</span>
+                        </p>
+                    </div>
+                </div>
+                <!-- ==== Lower feature section ==== -->
+                <div class=" bg-[#1a9fff] lower-section pl-9 pt-8 w-[82vw]">
+                    <div class="flex flex-col">
+                        <div class="flex flex-col w-[75vw]">
+                            <div class="flex gap-[68vw] text-white">
+                                <h1 class="font-bold text-sm">Title</h1>
+                                <h1 class="font-bold text-sm">Duration</h1>
+                            </div>
+                            <div class="w-[82vw] h-[.1px] bg-white mb-[20px]"></div>
+
+                            <div class="flex justify-between text-white hover:bg-[#87a3bd5e] py-3 transition-all duration-200">
+                                <div class="flex justify-center items-center gap-5">
+                                    <div class="text-xs">1</div>
+                                    <div>
+                                        <h1 class="text-sm font-semibold">Desi kalakaar</h1>
+                                        <p class="text-xs font-semibold text-[#a5a5a5]">Yo Yo Honey Singh</p>
+                                    </div>
+                                </div>
+                                <p class="text-sm font-semibold">5:55</p>
+                            </div>
+                            <div class="flex justify-between text-white hover:bg-[#87a3bd5e] py-3 transition-all duration-200">
+                                <div class="flex justify-center items-center gap-5">
+                                    <div class="text-xs">2</div>
+                                    <div>
+                                        <h1 class="text-sm font-semibold">Love Dose</h1>
+                                        <p class="text-xs font-semibold text-[#a5a5a5]">Yo Yo Honey Singh</p>
+                                    </div>
+                                </div>
+                                <p class="text-sm font-semibold">3:44</p>
+                            </div>
+                            <div class="flex justify-between text-white hover:bg-[#87a3bd5e] py-3 transition-all duration-200">
+                                <div class="flex justify-center items-center gap-5">
+                                    <div class="text-xs">3</div>
+                                    <div>
+                                        <h1 class="text-sm font-semibold">I'm your Dj tonight</h1>
+                                        <p class="text-xs font-semibold text-[#a5a5a5]">Yo Yo Honey Singh</p>
+                                    </div>
+                                </div>
+                                <p class="text-sm font-semibold">4:45</p>
+                            </div>
+                            <div class="flex justify-between text-white hover:bg-[#87a3bd5e] py-3 transition-all duration-200">
+                                <div class="flex justify-center items-center gap-5">
+                                    <div class="text-xs">4</div>
+                                    <div>
+                                        <h1 class="text-sm font-semibold">Chal mere ghar</h1>
+                                        <p class="text-xs font-semibold text-[#a5a5a5]">Yo Yo Honey Singh</p>
+                                    </div>
+                                </div>
+                                <p class="text-sm font-semibold">5:17</p>
+                            </div>
+                            <div class="flex justify-between text-white hover:bg-[#87a3bd5e] py-3 transition-all duration-200">
+                                <div class="flex justify-center items-center gap-5">
+                                    <div class="text-xs">5</div>
+                                    <div>
+                                        <h1 class="text-sm font-semibold">Daftar ki girl</h1>
+                                        <p class="text-xs font-semibold text-[#a5a5a5]">Yo Yo Honey Singh</p>
+                                    </div>
+                                </div>
+                                <p class="text-sm font-semibold">3:47</p>
+                            </div>
+                            <div class="flex justify-between text-white hover:bg-[#87a3bd5e] py-3 transition-all duration-200">
+                                <div class="flex justify-center items-center gap-5">
+                                    <div class="text-xs">6</div>
+                                    <div>
+                                        <h1 class="text-sm font-semibold">One thousand mile</h1>
+                                        <p class="text-xs font-semibold text-[#a5a5a5]">Yo Yo Honey Singh</p>
+                                    </div>
+                                </div>
+                                <p class="text-sm font-semibold">3:05</p>
+                            </div>
+                            <div class="flex justify-between text-white hover:bg-[#87a3bd5e] py-3 transition-all duration-200">
+                                <div class="flex justify-center items-center gap-5">
+                                    <div class="text-xs">7</div>
+                                    <div>
+                                        <h1 class="text-sm font-semibold">Stardom</h1>
+                                        <p class="text-xs font-semibold text-[#a5a5a5]">Yo Yo Honey Singh</p>
+                                    </div>
+                                </div>
+                                <p class="text-sm font-semibold">3:32</p>
+                            </div>
+                            <div class="flex justify-between text-white hover:bg-[#87a3bd5e] py-3 transition-all duration-200">
+                                <div class="flex justify-center items-center gap-5">
+                                    <div class="text-xs">8</div>
+                                    <div>
+                                        <h1 class="text-sm font-semibold">Tanning</h1>
+                                        <p class="text-xs font-semibold text-[#a5a5a5]">Yo Yo Honey Singh</p>
+                                    </div>
+                                </div>
+                                <p class="text-sm font-semibold">4:55</p>
+                            </div>
+                        </div>
+                        <div>
+                            <h1 class="text-white font-bold text-base py-5">More by Honey Singh</h1>
+                        </div>
+                        <!-- ==== cards ==== -->
+                        <div class="flex gap-5 mb-24">
+                            <div class="p-4 w-[160px] h-[200px] bg-[#1b1a1a] hover:bg-[#3a3a3a] transition-all duration-200 flex flex-col gap-2 rounded-md group">
+                                <img src="./images/blue_eyes.jpeg" class="h-[120px]">
+                                <div class="flex justify-between">
+                                    <div>
+                                        <h1 class="text-sm text-white">Blue eyes</h1>
+                                        <p class="text-xs text-[#a5a5a5]">2013</p>
+                                    </div>
+                                    <img src="./images/play icon.png" class="w-8 hidden  rounded-lg group-hover:block invert">
+
+                                </div>
+                                
+                            </div>
+                            <div class="p-4 w-[160px] h-[200px] bg-[#1b1a1a] hover:bg-[#3a3a3a] transition-all duration-200 flex flex-col gap-2 rounded-md group">
+                                <img src="./images/dheere.jpeg" class="h-[120px]">
+                                <div class="flex justify-between">
+                                    <div>
+                                        <h1 class="text-sm text-white">Dheere dheere</h1>
+                                        <p class="text-xs text-[#a5a5a5]">2015</p>
+                                    </div>
+                                    <img src="./images/play icon.png" class="w-8 hidden group-hover:bg-whitye rounded-lg group-hover:block invert">
+
+                                </div>
+                                
+                            </div>
+                            <div class="p-4 w-[160px] h-[200px] bg-[#1b1a1a] hover:bg-[#3a3a3a] transition-all duration-200 flex flex-col gap-2 rounded-md group">
+                                <img src="./images/kick_2002.jpeg" class="h-[120px]">
+                                <div class="flex justify-between">
+                                    <div >
+                                        <h1 class="text-sm text-white">Kick</h1>
+                                        <p class="text-xs text-[#a5a5a5]">2014</p>
+                                    </div>
+                                    <img src="./images/play icon.png" class="w-8 hidden group-hover:bg-whitye rounded-lg group-hover:block invert">
+                                </div>
+                                
+                            </div>
+                            <div class="p-4 w-[160px] h-[200px] bg-[#1b1a1a] hover:bg-[#3a3a3a] transition-all duration-200 flex flex-col gap-2 rounded-md group">
+                                <img src="./images/makhna.jpeg" class="h-[120px]">
+                                <div class="flex justify-between ">
+                                    <div>
+                                        <h1 class="text-sm text-white">Makhna</h1>
+                                        <p class="text-xs text-[#a5a5a5]">2023</p>
+                                    </div>
+                                    <img src="./images/play icon.png" class="w-8 hidden  rounded-lg group-hover:block invert">
+
+                                </div>
+                            </div>
+                            <div class="p-4 w-[160px] h-[200px] bg-[#1b1a1a] hover:bg-[#3a3a3a] transition-all duration-200 flex flex-col gap-2 rounded-md group">
+                                <img src="./images/main honey.png" class="h-[120px]">
+                                <div class="flex justify-between ">
+                                    <div>
+                                        <h1 class="text-sm text-white">Desi kalakaar</h1>
+                                        <p class="text-xs text-[#a5a5a5]">2013</p>
+                                    </div>
+                                    <img src="./images/play icon.png" class="w-8 hidden group-hover:bg-whitye rounded-lg group-hover:block invert">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ==== Footer section ==== -->
+        <div class="bg-[#1b1a1a] h-[10vh] p-2 flex justify-between">
+            <!-- ==== current song -->
+            <div class="flex gap-2 justify-center items-center">
+                <img src="./images/main honey.png" class="w-[45px]">
+                <div>
+                    <p class="text-white text-sm">Blue eyes</p>
+                    <p class="text-xs text-[#a5a5a5]">Yo Yo Honey singh</p>
+                </div>
+                <i class=" heart text-[#a5a5a5] uil uil-heart-alt"></i>
+            </div>
+            <!-- ==== play button ==== -->
+            <div class="">
+                <div class="flex gap-4 items-center justify-center">
+                    <i class="fa-sharp fa-solid fa-backward-step fa-[20px]" style="color:#c2c2c2;;"></i>
+
+                    <img src="images/play icon.png" class="w-[27px] invert">
+
+                    <i class="fa-sharp fa-solid fa-forward-step fa-[20px]" style="color: #c2c2c2;"></i>
+
+                </div>
+                <input type="range" name="song-slider" id="song-slider " class="h-[3px] w-[200px]">
+            </div>
+            <!-- ==== volume ==== -->
+            <div class="flex items-center justify-center">
+                <i class="uil uil-volume-down text-white"></i>
+                <input type="range" name="volume" id="volume" class="h-[3px]">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
